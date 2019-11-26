@@ -114,6 +114,7 @@
             this.txtMaDD.Name = "txtMaDD";
             this.txtMaDD.Size = new System.Drawing.Size(212, 22);
             this.txtMaDD.TabIndex = 6;
+            this.txtMaDD.TextChanged += new System.EventHandler(this.TxtMaDD_TextChanged);
             // 
             // label5
             // 
