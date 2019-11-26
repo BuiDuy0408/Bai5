@@ -28,12 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtTenDD = new System.Windows.Forms.TextBox();
+            this.txtMaDD = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // txtTenDD
+            // 
+            this.txtTenDD.Location = new System.Drawing.Point(112, 63);
+            this.txtTenDD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenDD.Name = "txtTenDD";
+            this.txtTenDD.Size = new System.Drawing.Size(212, 22);
+            this.txtTenDD.TabIndex = 11;
+            // 
+            // txtMaDD
+            // 
+            this.txtMaDD.Location = new System.Drawing.Point(112, 14);
+            this.txtMaDD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaDD.Name = "txtMaDD";
+            this.txtMaDD.Size = new System.Drawing.Size(212, 22);
+            this.txtMaDD.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 67);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Tên Đồ Dùng";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Mã Đồ Dùng";
+            // 
+            // frmDoDungCuaKhachSan
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtTenDD);
+            this.Controls.Add(this.txtMaDD);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "frmDoDungCuaKhachSan";
             this.Text = "frmDoDungCuaKhachSan";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtTenDD;
+        private System.Windows.Forms.TextBox txtMaDD;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
