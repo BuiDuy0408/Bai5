@@ -33,11 +33,15 @@
             this.txtMaPhong = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtMaDoDung);
             this.groupBox1.Controls.Add(this.txtMaPhong);
             this.groupBox1.Controls.Add(this.label2);
@@ -53,7 +57,7 @@
             // 
             // txtMaDoDung
             // 
-            this.txtMaDoDung.Location = new System.Drawing.Point(164, 85);
+            this.txtMaDoDung.Location = new System.Drawing.Point(167, 148);
             this.txtMaDoDung.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDoDung.Name = "txtMaDoDung";
             this.txtMaDoDung.Size = new System.Drawing.Size(204, 22);
@@ -62,7 +66,7 @@
             // txtMaPhong
             // 
             this.txtMaPhong.Enabled = false;
-            this.txtMaPhong.Location = new System.Drawing.Point(164, 32);
+            this.txtMaPhong.Location = new System.Drawing.Point(167, 95);
             this.txtMaPhong.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaPhong.Name = "txtMaPhong";
             this.txtMaPhong.Size = new System.Drawing.Size(204, 22);
@@ -71,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 94);
+            this.label2.Location = new System.Drawing.Point(44, 157);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 17);
@@ -81,12 +85,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 41);
+            this.label1.Location = new System.Drawing.Point(44, 104);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Phòng";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(167, 36);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(204, 22);
+            this.textBox1.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(44, 45);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 17);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Mã Phòng";
             // 
             // frmDoDungTheoPhong
             // 
@@ -109,5 +132,7 @@
         private System.Windows.Forms.TextBox txtMaPhong;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
