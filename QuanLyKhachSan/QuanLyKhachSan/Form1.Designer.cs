@@ -44,6 +44,9 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txttk_loaiphong = new System.Windows.Forms.TextBox();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +54,8 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Khaki;
+            this.groupBox5.Controls.Add(this.label2);
+            this.groupBox5.Controls.Add(this.textBox2);
             this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.groupBox4);
@@ -74,6 +79,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Khaki;
+            this.groupBox4.Controls.Add(this.txttk_loaiphong);
             this.groupBox4.Controls.Add(this.btnXoa);
             this.groupBox4.Controls.Add(this.btnHuy);
             this.groupBox4.Controls.Add(this.btnSua);
@@ -223,6 +229,32 @@
             this.label3.TabIndex = 64;
             this.label3.Text = "Mã phòng";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(317, 332);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(180, 22);
+            this.textBox2.TabIndex = 65;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(531, 337);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 17);
+            this.label2.TabIndex = 66;
+            this.label2.Text = "Loại phòng";
+            // 
+            // txttk_loaiphong
+            // 
+            this.txttk_loaiphong.Location = new System.Drawing.Point(25, 313);
+            this.txttk_loaiphong.Margin = new System.Windows.Forms.Padding(4);
+            this.txttk_loaiphong.Name = "txttk_loaiphong";
+            this.txttk_loaiphong.Size = new System.Drawing.Size(180, 22);
+            this.txttk_loaiphong.TabIndex = 60;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,6 +265,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -255,5 +288,8 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txttk_loaiphong;
     }
 }
