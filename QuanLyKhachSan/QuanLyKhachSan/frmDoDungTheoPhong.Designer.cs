@@ -42,7 +42,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvDodung = new System.Windows.Forms.DataGridView();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDodung)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -181,6 +190,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.dgvDodung);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 210);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -189,6 +199,66 @@
             this.groupBox2.Size = new System.Drawing.Size(892, 401);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
+            // 
+            // dgvDodung
+            // 
+            this.dgvDodung.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvDodung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDodung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column1});
+            this.dgvDodung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDodung.Location = new System.Drawing.Point(4, 19);
+            this.dgvDodung.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDodung.Name = "dgvDodung";
+            this.dgvDodung.Size = new System.Drawing.Size(884, 378);
+            this.dgvDodung.TabIndex = 1;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "MaDD";
+            this.Column2.HeaderText = "Mã đồ dùng";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "TenDD";
+            this.Column3.HeaderText = "Tên đồ dùng";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "SoLuong";
+            this.Column4.HeaderText = "Số lượng";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.DataPropertyName = "DonViTinh";
+            this.Column5.HeaderText = "Đơn vị tính";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column6.DataPropertyName = "TinhTrang";
+            this.Column6.HeaderText = "Tình trạng";
+            this.Column6.Name = "Column6";
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "GiaMua";
+            this.Column1.HeaderText = "Giá";
+            this.Column1.Name = "Column1";
             // 
             // frmDoDungTheoPhong
             // 
@@ -201,6 +271,8 @@
             this.Text = "Đồ dùng trong phòng";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDodung)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,5 +293,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dgvDodung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }
