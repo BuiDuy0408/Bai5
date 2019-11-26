@@ -40,5 +40,17 @@ namespace QuanLyKhachSan
             txtMa.Text = txtHoTen.Text = txtCMND.Text = cbGT.Text = txtTK.Text = cbTK.Text = "";
             dtpNgay.Text = DateTime.Now.ToString();
         }
+        private void dgvKhach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMa.Text = dgvKhach.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtHoTen.Text = dgvKhach.Rows[e.RowIndex].Cells[1].Value.ToString();
+                cbGT.Text = dgvKhach.Rows[e.RowIndex].Cells[2].Value.ToString();
+                dtpNgay.Text = dgvKhach.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtCMND.Text = dgvKhach.Rows[e.RowIndex].Cells[4].Value.ToString();
+            }
+            catch { }
+        }
     }
 }
