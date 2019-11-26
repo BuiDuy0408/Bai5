@@ -28,68 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtTenDD = new System.Windows.Forms.TextBox();
-            this.txtMaDD = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMaDoDung = new System.Windows.Forms.TextBox();
+            this.txtMaPhong = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtTenDD
+            // groupBox1
             // 
-            this.txtTenDD.Location = new System.Drawing.Point(107, 62);
-            this.txtTenDD.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTenDD.Name = "txtTenDD";
-            this.txtTenDD.Size = new System.Drawing.Size(212, 22);
-            this.txtTenDD.TabIndex = 11;
+            this.groupBox1.Controls.Add(this.txtMaDoDung);
+            this.groupBox1.Controls.Add(this.txtMaPhong);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1136, 210);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
             // 
-            // txtMaDD
+            // txtMaDoDung
             // 
-            this.txtMaDD.Location = new System.Drawing.Point(107, 13);
-            this.txtMaDD.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaDD.Name = "txtMaDD";
-            this.txtMaDD.Size = new System.Drawing.Size(212, 22);
-            this.txtMaDD.TabIndex = 10;
+            this.txtMaDoDung.Location = new System.Drawing.Point(164, 85);
+            this.txtMaDoDung.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaDoDung.Name = "txtMaDoDung";
+            this.txtMaDoDung.Size = new System.Drawing.Size(204, 22);
+            this.txtMaDoDung.TabIndex = 7;
+            // 
+            // txtMaPhong
+            // 
+            this.txtMaPhong.Enabled = false;
+            this.txtMaPhong.Location = new System.Drawing.Point(164, 32);
+            this.txtMaPhong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaPhong.Name = "txtMaPhong";
+            this.txtMaPhong.Size = new System.Drawing.Size(204, 22);
+            this.txtMaPhong.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 66);
+            this.label2.Location = new System.Drawing.Point(41, 94);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 17);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Tên Đồ Dùng";
+            this.label2.Size = new System.Drawing.Size(87, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Mã Đồ Dùng";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 18);
+            this.label1.Location = new System.Drawing.Point(41, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 17);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Mã Đồ Dùng";
+            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã Phòng";
             // 
             // frmDoDungTheoPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1136, 611);
-            this.Controls.Add(this.txtTenDD);
-            this.Controls.Add(this.txtMaDD);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "frmDoDungTheoPhong";
             this.Text = "Đồ dùng trong phòng";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtTenDD;
-        private System.Windows.Forms.TextBox txtMaDD;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtMaDoDung;
+        private System.Windows.Forms.TextBox txtMaPhong;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }
