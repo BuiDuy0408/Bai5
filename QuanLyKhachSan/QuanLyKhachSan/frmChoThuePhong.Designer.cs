@@ -232,7 +232,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(279, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(184, 498);
+            this.groupBox1.Size = new System.Drawing.Size(502, 498);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
@@ -311,7 +311,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(3, 16);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(178, 479);
+            this.groupBox2.Size = new System.Drawing.Size(496, 479);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             // 
@@ -321,7 +321,7 @@
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(3, 242);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(172, 234);
+            this.groupBox4.Size = new System.Drawing.Size(490, 234);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Dịch Vụ Sử Dụng";
@@ -338,7 +338,7 @@
             this.dgvDichVu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDichVu.Location = new System.Drawing.Point(3, 16);
             this.dgvDichVu.Name = "dgvDichVu";
-            this.dgvDichVu.Size = new System.Drawing.Size(166, 215);
+            this.dgvDichVu.Size = new System.Drawing.Size(484, 215);
             this.dgvDichVu.TabIndex = 0;
             // 
             // Column7
@@ -371,7 +371,7 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Location = new System.Drawing.Point(3, 16);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(172, 226);
+            this.groupBox3.Size = new System.Drawing.Size(490, 226);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Phòng còn trống";
@@ -388,7 +388,7 @@
             this.dgvPhongTrong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPhongTrong.Location = new System.Drawing.Point(3, 16);
             this.dgvPhongTrong.Name = "dgvPhongTrong";
-            this.dgvPhongTrong.Size = new System.Drawing.Size(166, 207);
+            this.dgvPhongTrong.Size = new System.Drawing.Size(484, 207);
             this.dgvPhongTrong.TabIndex = 0;
             // 
             // Column3
