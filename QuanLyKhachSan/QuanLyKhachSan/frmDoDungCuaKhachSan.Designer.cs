@@ -43,31 +43,12 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.dgvDoDung = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBoxText.SuspendLayout();
             this.groupBoxButton.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxText
             // 
-            this.groupBoxText.Controls.Add(this.label7);
-            this.groupBoxText.Controls.Add(this.textBox4);
-            this.groupBoxText.Controls.Add(this.textBox3);
-            this.groupBoxText.Controls.Add(this.textBox2);
-            this.groupBoxText.Controls.Add(this.textBox1);
-            this.groupBoxText.Controls.Add(this.label6);
             this.groupBoxText.Controls.Add(this.txtGiaNhap);
             this.groupBoxText.Controls.Add(this.txtDonViTinh);
             this.groupBoxText.Controls.Add(this.txtSoLuong);
@@ -83,7 +64,7 @@
             this.groupBoxText.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxText.Name = "groupBoxText";
             this.groupBoxText.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxText.Size = new System.Drawing.Size(814, 509);
+            this.groupBoxText.Size = new System.Drawing.Size(806, 509);
             this.groupBoxText.TabIndex = 1;
             this.groupBoxText.TabStop = false;
             this.groupBoxText.Enter += new System.EventHandler(this.GroupBoxText_Enter);
@@ -181,21 +162,21 @@
             // 
             // groupBoxButton
             // 
-            this.groupBoxButton.Controls.Add(this.dgvDoDung);
             this.groupBoxButton.Controls.Add(this.btnXoa);
             this.groupBoxButton.Controls.Add(this.btnSua);
             this.groupBoxButton.Controls.Add(this.btnThem);
             this.groupBoxButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxButton.Location = new System.Drawing.Point(814, 0);
+            this.groupBoxButton.Location = new System.Drawing.Point(806, 0);
             this.groupBoxButton.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxButton.Name = "groupBoxButton";
             this.groupBoxButton.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxButton.Size = new System.Drawing.Size(509, 509);
+            this.groupBoxButton.Size = new System.Drawing.Size(517, 509);
             this.groupBoxButton.TabIndex = 2;
             this.groupBoxButton.TabStop = false;
             // 
             // btnXoa
             // 
+            this.btnXoa.ForeColor = System.Drawing.Color.Red;
             this.btnXoa.Location = new System.Drawing.Point(128, 127);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
@@ -206,6 +187,7 @@
             // 
             // btnSua
             // 
+            this.btnSua.ForeColor = System.Drawing.Color.OrangeRed;
             this.btnSua.Location = new System.Drawing.Point(128, 75);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
@@ -216,6 +198,7 @@
             // 
             // btnThem
             // 
+            this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThem.Location = new System.Drawing.Point(128, 23);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
@@ -223,117 +206,6 @@
             this.btnThem.TabIndex = 0;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // dgvDoDung
-            // 
-            this.dgvDoDung.BackgroundColor = System.Drawing.Color.Red;
-            this.dgvDoDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDoDung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.dgvDoDung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDoDung.Location = new System.Drawing.Point(4, 19);
-            this.dgvDoDung.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvDoDung.Name = "dgvDoDung";
-            this.dgvDoDung.RowHeadersWidth = 51;
-            this.dgvDoDung.Size = new System.Drawing.Size(501, 486);
-            this.dgvDoDung.TabIndex = 3;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.DataPropertyName = "MaDD";
-            this.Column1.HeaderText = "Mã Đồ Dùng";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.DataPropertyName = "TenDD";
-            this.Column2.HeaderText = "Tên Đồ Dùng";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.DataPropertyName = "SoLuong";
-            this.Column3.HeaderText = "Số Lượng";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.DataPropertyName = "DonViTinh";
-            this.Column4.HeaderText = "Đơn Vị Tính";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column5.DataPropertyName = "GiaMua";
-            this.Column5.HeaderText = "Giá Nhập";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 153);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 17);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Thu Tu";
-            this.label6.Click += new System.EventHandler(this.Label6_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(8, 217);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 22);
-            this.textBox1.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(8, 268);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 22);
-            this.textBox2.TabIndex = 13;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(8, 315);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(212, 22);
-            this.textBox3.TabIndex = 14;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(8, 364);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(212, 22);
-            this.textBox4.TabIndex = 15;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(281, 364);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 17);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Giá Nhập";
             // 
             // frmDoDungCuaKhachSan
             // 
@@ -347,7 +219,6 @@
             this.groupBoxText.ResumeLayout(false);
             this.groupBoxText.PerformLayout();
             this.groupBoxButton.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -369,17 +240,5 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.DataGridView dgvDoDung;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label7;
     }
 }
