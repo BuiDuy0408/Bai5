@@ -50,6 +50,11 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBoxText.SuspendLayout();
             this.groupBoxButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).BeginInit();
@@ -57,6 +62,11 @@
             // 
             // groupBoxText
             // 
+            this.groupBoxText.Controls.Add(this.label7);
+            this.groupBoxText.Controls.Add(this.textBox4);
+            this.groupBoxText.Controls.Add(this.textBox3);
+            this.groupBoxText.Controls.Add(this.textBox2);
+            this.groupBoxText.Controls.Add(this.textBox1);
             this.groupBoxText.Controls.Add(this.label6);
             this.groupBoxText.Controls.Add(this.txtGiaNhap);
             this.groupBoxText.Controls.Add(this.txtDonViTinh);
@@ -76,6 +86,7 @@
             this.groupBoxText.Size = new System.Drawing.Size(814, 509);
             this.groupBoxText.TabIndex = 1;
             this.groupBoxText.TabStop = false;
+            this.groupBoxText.Enter += new System.EventHandler(this.GroupBoxText_Enter);
             // 
             // txtGiaNhap
             // 
@@ -282,6 +293,48 @@
             this.label6.Text = "Thu Tu";
             this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(8, 217);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(212, 22);
+            this.textBox1.TabIndex = 12;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(8, 268);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(212, 22);
+            this.textBox2.TabIndex = 13;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(8, 315);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(212, 22);
+            this.textBox3.TabIndex = 14;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(8, 364);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(212, 22);
+            this.textBox4.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(281, 364);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 17);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Giá Nhập";
+            // 
             // frmDoDungCuaKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -323,5 +376,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
     }
 }
