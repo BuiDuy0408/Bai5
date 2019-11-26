@@ -33,7 +33,7 @@ namespace QuanLyKhachSan
         }
         private void btnThemKhachMoi_Click(object sender, EventArgs e)
         {
-            KhachThue frm = new KhachThue();
+            frmKhachThue frm = new frmKhachThue();
             frm.Show();
 
         }

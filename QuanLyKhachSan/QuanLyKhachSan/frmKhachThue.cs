@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan
 {
-    public partial class KhachThue : Form
+    public partial class frmKhachThue : Form
     {
-        public KhachThue()
+        public frmKhachThue()
         {
             InitializeComponent();
         }
