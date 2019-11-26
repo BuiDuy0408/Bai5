@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "frmDoDungCuaKhachSan";
-            this.Text = "frmDoDungCuaKhachSan";
+            this.Text = "Đồ Dùng Của Khách Sạn";
             this.Load += new System.EventHandler(this.FrmDoDungCuaKhachSan_Load);
             this.ResumeLayout(false);
 
