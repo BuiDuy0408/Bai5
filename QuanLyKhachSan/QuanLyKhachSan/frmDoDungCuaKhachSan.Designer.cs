@@ -49,20 +49,15 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.eventLog1 = new System.Diagnostics.EventLog();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBoxText.SuspendLayout();
             this.groupBoxButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxText
             // 
-            this.groupBoxText.Controls.Add(this.dataGridView1);
+            this.groupBoxText.Controls.Add(this.label6);
             this.groupBoxText.Controls.Add(this.txtGiaNhap);
             this.groupBoxText.Controls.Add(this.txtDonViTinh);
             this.groupBoxText.Controls.Add(this.txtSoLuong);
@@ -84,7 +79,7 @@
             // 
             // txtGiaNhap
             // 
-            this.txtGiaNhap.Location = new System.Drawing.Point(387, 151);
+            this.txtGiaNhap.Location = new System.Drawing.Point(563, 150);
             this.txtGiaNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtGiaNhap.Name = "txtGiaNhap";
             this.txtGiaNhap.Size = new System.Drawing.Size(187, 22);
@@ -126,7 +121,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(287, 155);
+            this.label5.Location = new System.Drawing.Point(429, 153);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 17);
@@ -220,7 +215,7 @@
             // 
             // dgvDoDung
             // 
-            this.dgvDoDung.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvDoDung.BackgroundColor = System.Drawing.Color.Red;
             this.dgvDoDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDoDung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -276,23 +271,16 @@
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             // 
-            // dataGridView1
+            // label6
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(387, 304);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 11;
-            // 
-            // eventLog1
-            // 
-            this.eventLog1.SynchronizingObject = this;
-            // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 153);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 17);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Thu Tu";
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // frmDoDungCuaKhachSan
             // 
@@ -307,9 +295,6 @@
             this.groupBoxText.PerformLayout();
             this.groupBoxButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -337,8 +322,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Diagnostics.EventLog eventLog1;
-        private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private System.Windows.Forms.Label label6;
     }
 }
