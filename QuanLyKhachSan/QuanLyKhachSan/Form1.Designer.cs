@@ -41,6 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +70,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Khaki;
+            this.groupBox4.Controls.Add(this.btnXoa);
             this.groupBox4.Controls.Add(this.btnHuy);
             this.groupBox4.Controls.Add(this.btnSua);
             this.groupBox4.Controls.Add(this.btnLuu);
@@ -187,6 +189,16 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(251, 140);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(100, 43);
+            this.btnXoa.TabIndex = 59;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -216,5 +228,6 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnXoa;
     }
 }
