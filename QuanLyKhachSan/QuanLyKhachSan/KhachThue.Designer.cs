@@ -67,7 +67,7 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(0, 230);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(879, 204);
+            this.groupBox3.Size = new System.Drawing.Size(785, 204);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
@@ -84,7 +84,7 @@
             this.dgvKhach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKhach.Location = new System.Drawing.Point(3, 16);
             this.dgvKhach.Name = "dgvKhach";
-            this.dgvKhach.Size = new System.Drawing.Size(873, 185);
+            this.dgvKhach.Size = new System.Drawing.Size(779, 185);
             this.dgvKhach.TabIndex = 0;
             // 
             // Column1
@@ -130,7 +130,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Location = new System.Drawing.Point(0, 165);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(879, 65);
+            this.groupBox2.Size = new System.Drawing.Size(785, 65);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
@@ -182,13 +182,13 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(879, 165);
+            this.groupBox1.Size = new System.Drawing.Size(785, 165);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(742, 67);
+            this.btnHuy.Location = new System.Drawing.Point(700, 71);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 34);
             this.btnHuy.TabIndex = 30;
@@ -197,7 +197,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(742, 21);
+            this.btnLuu.Location = new System.Drawing.Point(700, 21);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 34);
             this.btnLuu.TabIndex = 29;
@@ -206,7 +206,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(631, 111);
+            this.btnXoa.Location = new System.Drawing.Point(589, 111);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 34);
             this.btnXoa.TabIndex = 28;
@@ -215,7 +215,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(631, 67);
+            this.btnSua.Location = new System.Drawing.Point(589, 71);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 34);
             this.btnSua.TabIndex = 27;
@@ -224,7 +224,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(631, 23);
+            this.btnThem.Location = new System.Drawing.Point(589, 21);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 34);
             this.btnThem.TabIndex = 26;
@@ -321,7 +321,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(879, 434);
+            this.ClientSize = new System.Drawing.Size(785, 434);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
