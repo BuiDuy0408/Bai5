@@ -33,12 +33,18 @@
             this.txtMaphong = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnDodung = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Khaki;
+            this.groupBox5.Controls.Add(this.btnDodung);
+            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Controls.Add(this.txtTenphong);
             this.groupBox5.Controls.Add(this.txtMaphong);
             this.groupBox5.Controls.Add(this.label6);
@@ -90,6 +96,34 @@
             this.label4.TabIndex = 54;
             this.label4.Text = "Mã phòng";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(166, 89);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 17);
+            this.label5.TabIndex = 59;
+            this.label5.Text = "Loại phòng";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(316, 89);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(180, 22);
+            this.textBox1.TabIndex = 60;
+            // 
+            // btnDodung
+            // 
+            this.btnDodung.Location = new System.Drawing.Point(316, 128);
+            this.btnDodung.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDodung.Name = "btnDodung";
+            this.btnDodung.Size = new System.Drawing.Size(181, 28);
+            this.btnDodung.TabIndex = 61;
+            this.btnDodung.Text = "Đồ dùng trong phòng";
+            this.btnDodung.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -110,5 +144,8 @@
         private System.Windows.Forms.TextBox txtMaphong;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnDodung;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
     }
 }
