@@ -28,118 +28,212 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.groupBoxText = new System.Windows.Forms.GroupBox();
+            this.txtGiaNhap = new System.Windows.Forms.TextBox();
             this.txtDonViTinh = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.txtTenDD = new System.Windows.Forms.TextBox();
             this.txtMaDD = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBoxButton = new System.Windows.Forms.GroupBox();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.groupBoxText.SuspendLayout();
+            this.groupBoxButton.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // groupBoxText
+            // 
+            this.groupBoxText.Controls.Add(this.txtGiaNhap);
+            this.groupBoxText.Controls.Add(this.txtDonViTinh);
+            this.groupBoxText.Controls.Add(this.txtSoLuong);
+            this.groupBoxText.Controls.Add(this.txtTenDD);
+            this.groupBoxText.Controls.Add(this.txtMaDD);
+            this.groupBoxText.Controls.Add(this.label5);
+            this.groupBoxText.Controls.Add(this.label4);
+            this.groupBoxText.Controls.Add(this.label3);
+            this.groupBoxText.Controls.Add(this.label2);
+            this.groupBoxText.Controls.Add(this.label1);
+            this.groupBoxText.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBoxText.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxText.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBoxText.Name = "groupBoxText";
+            this.groupBoxText.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxText.Size = new System.Drawing.Size(809, 450);
+            this.groupBoxText.TabIndex = 1;
+            this.groupBoxText.TabStop = false;
+            // 
+            // txtGiaNhap
+            // 
+            this.txtGiaNhap.Location = new System.Drawing.Point(387, 151);
+            this.txtGiaNhap.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGiaNhap.Name = "txtGiaNhap";
+            this.txtGiaNhap.Size = new System.Drawing.Size(187, 22);
+            this.txtGiaNhap.TabIndex = 10;
             // 
             // txtDonViTinh
             // 
-            this.txtDonViTinh.Location = new System.Drawing.Point(533, 70);
+            this.txtDonViTinh.Location = new System.Drawing.Point(539, 94);
             this.txtDonViTinh.Margin = new System.Windows.Forms.Padding(4);
             this.txtDonViTinh.Name = "txtDonViTinh";
             this.txtDonViTinh.Size = new System.Drawing.Size(232, 22);
-            this.txtDonViTinh.TabIndex = 17;
+            this.txtDonViTinh.TabIndex = 9;
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(533, 9);
+            this.txtSoLuong.Location = new System.Drawing.Point(539, 33);
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(232, 22);
-            this.txtSoLuong.TabIndex = 16;
+            this.txtSoLuong.TabIndex = 8;
             // 
             // txtTenDD
             // 
-            this.txtTenDD.Location = new System.Drawing.Point(109, 62);
+            this.txtTenDD.Location = new System.Drawing.Point(115, 86);
             this.txtTenDD.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDD.Name = "txtTenDD";
             this.txtTenDD.Size = new System.Drawing.Size(212, 22);
-            this.txtTenDD.TabIndex = 15;
+            this.txtTenDD.TabIndex = 7;
             // 
             // txtMaDD
             // 
-            this.txtMaDD.Location = new System.Drawing.Point(109, 13);
+            this.txtMaDD.Location = new System.Drawing.Point(115, 37);
             this.txtMaDD.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDD.Name = "txtMaDD";
             this.txtMaDD.Size = new System.Drawing.Size(212, 22);
-            this.txtMaDD.TabIndex = 14;
+            this.txtMaDD.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(287, 155);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 17);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Giá Nhập";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(409, 73);
+            this.label4.Location = new System.Drawing.Point(415, 97);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 17);
-            this.label4.TabIndex = 13;
+            this.label4.TabIndex = 3;
             this.label4.Text = "Đơn Vị Tính";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(425, 17);
+            this.label3.Location = new System.Drawing.Point(431, 41);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 17);
-            this.label3.TabIndex = 12;
+            this.label3.TabIndex = 2;
             this.label3.Text = "Số Lượng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 66);
+            this.label2.Location = new System.Drawing.Point(11, 90);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 17);
-            this.label2.TabIndex = 11;
+            this.label2.TabIndex = 1;
             this.label2.Text = "Tên Đồ Dùng";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 18);
+            this.label1.Location = new System.Drawing.Point(16, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 17);
-            this.label1.TabIndex = 10;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Mã Đồ Dùng";
+            // 
+            // groupBoxButton
+            // 
+            this.groupBoxButton.Controls.Add(this.btnXoa);
+            this.groupBoxButton.Controls.Add(this.btnSua);
+            this.groupBoxButton.Controls.Add(this.btnThem);
+            this.groupBoxButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxButton.Location = new System.Drawing.Point(809, 0);
+            this.groupBoxButton.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBoxButton.Name = "groupBoxButton";
+            this.groupBoxButton.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxButton.Size = new System.Drawing.Size(514, 450);
+            this.groupBoxButton.TabIndex = 2;
+            this.groupBoxButton.TabStop = false;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(128, 127);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(157, 28);
+            this.btnXoa.TabIndex = 2;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(128, 75);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(157, 28);
+            this.btnSua.TabIndex = 1;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(128, 23);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(157, 28);
+            this.btnThem.TabIndex = 0;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
             // 
             // frmDoDungCuaKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtDonViTinh);
-            this.Controls.Add(this.txtSoLuong);
-            this.Controls.Add(this.txtTenDD);
-            this.Controls.Add(this.txtMaDD);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1323, 450);
+            this.Controls.Add(this.groupBoxButton);
+            this.Controls.Add(this.groupBoxText);
             this.Name = "frmDoDungCuaKhachSan";
             this.Text = "frmDoDungCuaKhachSan";
-            this.Load += new System.EventHandler(this.FrmDoDungCuaKhachSan_Load);
+            this.groupBoxText.ResumeLayout(false);
+            this.groupBoxText.PerformLayout();
+            this.groupBoxButton.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.GroupBox groupBoxText;
+        private System.Windows.Forms.TextBox txtGiaNhap;
         private System.Windows.Forms.TextBox txtDonViTinh;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.TextBox txtTenDD;
         private System.Windows.Forms.TextBox txtMaDD;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBoxButton;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
     }
 }
