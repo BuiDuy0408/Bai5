@@ -48,8 +48,6 @@ namespace BangKhachSan
             cmd.CommandType = CommandType.StoredProcedure;
 
            cmd.Parameters.AddWithValue("@MaPhong", MaPhong);
-            cmd.Parameters.AddWithValue("@TenPhong", TenPhong);
-            cmd.Parameters.AddWithValue("@LoaiPhong", LoaiPhong);
             cmd.ExecuteNonQuery();
 
             cmd.Dispose();
