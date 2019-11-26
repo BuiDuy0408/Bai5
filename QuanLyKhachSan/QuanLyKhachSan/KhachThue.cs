@@ -66,5 +66,26 @@ namespace QuanLyKhachSan
             SetNull();
             chon = 1;
         }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            Mo();
+            SetNull();
+            chon = 2;
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            frmKhachThue_Load(sender, e);
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("Bạn muốn xóa Khách này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                khach.XoaKhach(txtMa.Text);
+                MessageBox.Show("Xóa thành công!");
+                frmKhachThue_Load(sender, e);
+            }
+        }
     }
 }
