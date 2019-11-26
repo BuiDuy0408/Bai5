@@ -43,5 +43,40 @@ namespace QuanLyKhachSan
             HienThiListKhach();
             HienThiPhongTrong_DV();
         }
+        private void dgvKhachThuePhong_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMaKH.Text = dgvKhachThuePhong.Rows[e.RowIndex].Cells[0].Value.ToString();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void dgvPhongTrong_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMaPhong.Text = dgvPhongTrong.Rows[e.RowIndex].Cells[0].Value.ToString();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void dgvDichVu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMaDV.Text = dgvDichVu.Rows[e.RowIndex].Cells[0].Value.ToString();
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
