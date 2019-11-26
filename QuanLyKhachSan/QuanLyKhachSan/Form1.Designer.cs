@@ -42,6 +42,8 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +51,8 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Khaki;
+            this.groupBox5.Controls.Add(this.label3);
+            this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.groupBox4);
             this.groupBox5.Controls.Add(this.btnDodung);
             this.groupBox5.Controls.Add(this.textBox1);
@@ -62,7 +66,7 @@
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(1126, 419);
+            this.groupBox5.Size = new System.Drawing.Size(1081, 527);
             this.groupBox5.TabIndex = 56;
             this.groupBox5.TabStop = false;
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
@@ -76,11 +80,11 @@
             this.groupBox4.Controls.Add(this.btnLuu);
             this.groupBox4.Controls.Add(this.btnThem);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox4.Location = new System.Drawing.Point(598, 19);
+            this.groupBox4.Location = new System.Drawing.Point(593, 19);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(524, 396);
+            this.groupBox4.Size = new System.Drawing.Size(484, 504);
             this.groupBox4.TabIndex = 62;
             this.groupBox4.TabStop = false;
             // 
@@ -199,11 +203,31 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(95, 332);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 17);
+            this.label1.TabIndex = 63;
+            this.label1.Text = "Tìm kiếm theo : ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(227, 332);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.TabIndex = 64;
+            this.label3.Text = "Mã phòng";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1126, 419);
+            this.ClientSize = new System.Drawing.Size(1081, 527);
             this.Controls.Add(this.groupBox5);
             this.Name = "Form1";
             this.groupBox5.ResumeLayout(false);
@@ -229,5 +253,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
     }
 }
