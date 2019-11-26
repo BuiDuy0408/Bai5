@@ -43,8 +43,15 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.dgvDoDung = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxText.SuspendLayout();
             this.groupBoxButton.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxText
@@ -60,7 +67,7 @@
             this.groupBoxText.Controls.Add(this.label2);
             this.groupBoxText.Controls.Add(this.label1);
             this.groupBoxText.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBoxText.ForeColor = System.Drawing.Color.Red;
+            this.groupBoxText.ForeColor = System.Drawing.Color.Black;
             this.groupBoxText.Location = new System.Drawing.Point(0, 0);
             this.groupBoxText.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxText.Name = "groupBoxText";
@@ -114,7 +121,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(429, 153);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -125,7 +132,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(415, 97);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -136,7 +143,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(431, 41);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -166,6 +173,7 @@
             // 
             // groupBoxButton
             // 
+            this.groupBoxButton.Controls.Add(this.dgvDoDung);
             this.groupBoxButton.Controls.Add(this.btnXoa);
             this.groupBoxButton.Controls.Add(this.btnSua);
             this.groupBoxButton.Controls.Add(this.btnThem);
@@ -211,6 +219,64 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
+            // dgvDoDung
+            // 
+            this.dgvDoDung.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvDoDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDoDung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dgvDoDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDoDung.Location = new System.Drawing.Point(4, 19);
+            this.dgvDoDung.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDoDung.Name = "dgvDoDung";
+            this.dgvDoDung.RowHeadersWidth = 51;
+            this.dgvDoDung.Size = new System.Drawing.Size(509, 486);
+            this.dgvDoDung.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "MaDD";
+            this.Column1.HeaderText = "Mã Đồ Dùng";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "TenDD";
+            this.Column2.HeaderText = "Tên Đồ Dùng";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "SoLuong";
+            this.Column3.HeaderText = "Số Lượng";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "DonViTinh";
+            this.Column4.HeaderText = "Đơn Vị Tính";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.DataPropertyName = "GiaMua";
+            this.Column5.HeaderText = "Giá Nhập";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
             // frmDoDungCuaKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,6 +289,7 @@
             this.groupBoxText.ResumeLayout(false);
             this.groupBoxText.PerformLayout();
             this.groupBoxButton.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,5 +311,11 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.DataGridView dgvDoDung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
