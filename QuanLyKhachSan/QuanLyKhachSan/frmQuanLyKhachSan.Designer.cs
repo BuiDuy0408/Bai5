@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyKhachSan));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +40,9 @@
             this.thuêPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trảPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBoxBackground = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackground)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -109,13 +112,13 @@
             // thuêPhòngToolStripMenuItem
             // 
             this.thuêPhòngToolStripMenuItem.Name = "thuêPhòngToolStripMenuItem";
-            this.thuêPhòngToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.thuêPhòngToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.thuêPhòngToolStripMenuItem.Text = "Thuê Phòng";
             // 
             // trảPhòngToolStripMenuItem
             // 
             this.trảPhòngToolStripMenuItem.Name = "trảPhòngToolStripMenuItem";
-            this.trảPhòngToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.trảPhòngToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.trảPhòngToolStripMenuItem.Text = "Trả Phòng";
             // 
             // hướngDẫnToolStripMenuItem
@@ -124,16 +127,31 @@
             this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(98, 24);
             this.hướngDẫnToolStripMenuItem.Text = "Hướng Dẫn";
             // 
+            // pictureBoxBackground
+            // 
+            this.pictureBoxBackground.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxBackground.BackgroundImage")));
+            this.pictureBoxBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxBackground.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxBackground.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxBackground.Location = new System.Drawing.Point(0, 28);
+            this.pictureBoxBackground.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxBackground.Name = "pictureBoxBackground";
+            this.pictureBoxBackground.Size = new System.Drawing.Size(941, 501);
+            this.pictureBoxBackground.TabIndex = 2;
+            this.pictureBoxBackground.TabStop = false;
+            // 
             // frmQuanLyKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 529);
+            this.Controls.Add(this.pictureBoxBackground);
             this.Controls.Add(this.menuStrip1);
             this.Name = "frmQuanLyKhachSan";
             this.Text = "frmQuanLyKhachSan";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +170,6 @@
         private System.Windows.Forms.ToolStripMenuItem thuêPhòngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trảPhòngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBoxBackground;
     }
 }
