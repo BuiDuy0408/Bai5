@@ -28,13 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Đăng nhập");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Màn hình chính");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Cho thuê phòng");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Đồ dùng của khách sạn");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Đồ dùng theo phòng");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Khách thuê");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Phòng");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Trả phòng");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Các chức năng", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Giới thiệu phần mềm", new System.Windows.Forms.TreeNode[] {
+            treeNode9});
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
+            // 
+            // treeView1
+            // 
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Name = "treeView1";
+            treeNode1.Name = "gtDangNhap";
+            treeNode1.Text = "Đăng nhập";
+            treeNode2.Name = "gtManHinhChinh";
+            treeNode2.Text = "Màn hình chính";
+            treeNode3.Name = "gtChoThuePhong";
+            treeNode3.Text = "Cho thuê phòng";
+            treeNode4.Name = "gtDoDungCuaKhachSan";
+            treeNode4.Text = "Đồ dùng của khách sạn";
+            treeNode5.Name = "gtDoDungTheoPhong";
+            treeNode5.Text = "Đồ dùng theo phòng";
+            treeNode6.Name = "gtKhachThue";
+            treeNode6.Text = "Khách thuê";
+            treeNode7.Name = "gtPhong";
+            treeNode7.Text = "Phòng";
+            treeNode8.Name = "gtTraPhong";
+            treeNode8.Text = "Trả phòng";
+            treeNode9.Name = "gtChucNang";
+            treeNode9.Text = "Các chức năng";
+            treeNode10.Name = "gtPhanMem";
+            treeNode10.Text = "Giới thiệu phần mềm";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode10});
+            this.treeView1.Size = new System.Drawing.Size(172, 284);
+            this.treeView1.TabIndex = 3;
             // 
             // frmHuongDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 284);
+            this.Controls.Add(this.treeView1);
             this.Name = "frmHuongDan";
             this.Text = "frmHuongDan";
             this.ResumeLayout(false);
@@ -42,5 +93,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
