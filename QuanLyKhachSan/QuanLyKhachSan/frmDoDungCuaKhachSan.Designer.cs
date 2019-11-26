@@ -49,13 +49,20 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.eventLog1 = new System.Diagnostics.EventLog();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.groupBoxText.SuspendLayout();
             this.groupBoxButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxText
             // 
+            this.groupBoxText.Controls.Add(this.dataGridView1);
             this.groupBoxText.Controls.Add(this.txtGiaNhap);
             this.groupBoxText.Controls.Add(this.txtDonViTinh);
             this.groupBoxText.Controls.Add(this.txtSoLuong);
@@ -269,6 +276,24 @@
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(387, 304);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // eventLog1
+            // 
+            this.eventLog1.SynchronizingObject = this;
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
             // frmDoDungCuaKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -282,6 +307,9 @@
             this.groupBoxText.PerformLayout();
             this.groupBoxButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,5 +337,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Diagnostics.EventLog eventLog1;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
     }
 }
