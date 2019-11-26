@@ -87,5 +87,42 @@ namespace QuanLyKhachSan
                 frmKhachThue_Load(sender, e);
             }
         }
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (chon == 1)
+            {
+                if (txtHoTen.Text == "" || cbGT.Text == "" || txtCMND.Text == "")
+                    MessageBox.Show("Mời nhập đầy đủ thông tin!");
+                else
+                    if (DialogResult.Yes == MessageBox.Show("Bạn có muốn thêm Khách này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    khach.ThemKhach(txtHoTen.Text, cbGT.Text, dtpNgay.Text, txtCMND.Text);
+                    MessageBox.Show("Thêm thành công!");
+                    frmKhachThue_Load(sender, e);
+                }
+            }
+            else if (chon == 2)
+            {
+                if (txtHoTen.Text == "" || cbGT.Text == "" || txtCMND.Text == "")
+                    MessageBox.Show("Mời nhập đầy đủ thông tin!");
+                else
+                    if (DialogResult.Yes == MessageBox.Show("Bạn có muốn Sửa Khách này?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                {
+                    khach.SuaKhach(txtMa.Text, txtHoTen.Text, cbGT.Text, dtpNgay.Text, txtCMND.Text);
+                    MessageBox.Show("Sửa thành công!");
+                    frmKhachThue_Load(sender, e);
+                }
+            }
+        }
+
+        private void txtTK_TextChanged(object sender, EventArgs e)
+        {
+            if (cbTK.Text == "Mã Khách")
+                dgvKhach.DataSource = tk.TKKhach_MaKhach(txtTK.Text);
+            else if (cbTK.Text == "Tên Khách")
+                dgvKhach.DataSource = tk.TKKhach_TenKhach(txtTK.Text);
+            else if (cbTK.Text == "CMND")
+                dgvKhach.DataSource = tk.TKKhach_CMND(txtTK.Text);
+        }
     }
 }
