@@ -52,5 +52,19 @@ namespace QuanLyKhachSan
             }
             catch { }
         }
+        private void frmKhachThue_Load(object sender, EventArgs e)
+        {
+            dgvKhach.DataSource = khach.HienThiKhach();
+            Khoa();
+            SetNull();
+            chon = 0;
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Mo();
+            SetNull();
+            chon = 1;
+        }
     }
 }

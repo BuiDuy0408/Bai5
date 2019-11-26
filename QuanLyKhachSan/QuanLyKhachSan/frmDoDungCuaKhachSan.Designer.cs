@@ -43,8 +43,15 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.dgvDoDung = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxText.SuspendLayout();
             this.groupBoxButton.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxText
@@ -64,7 +71,7 @@
             this.groupBoxText.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxText.Name = "groupBoxText";
             this.groupBoxText.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxText.Size = new System.Drawing.Size(809, 450);
+            this.groupBoxText.Size = new System.Drawing.Size(814, 509);
             this.groupBoxText.TabIndex = 1;
             this.groupBoxText.TabStop = false;
             // 
@@ -107,6 +114,7 @@
             this.txtMaDD.Name = "txtMaDD";
             this.txtMaDD.Size = new System.Drawing.Size(212, 22);
             this.txtMaDD.TabIndex = 6;
+            this.txtMaDD.TextChanged += new System.EventHandler(this.TxtMaDD_TextChanged);
             // 
             // label5
             // 
@@ -160,15 +168,16 @@
             // 
             // groupBoxButton
             // 
+            this.groupBoxButton.Controls.Add(this.dgvDoDung);
             this.groupBoxButton.Controls.Add(this.btnXoa);
             this.groupBoxButton.Controls.Add(this.btnSua);
             this.groupBoxButton.Controls.Add(this.btnThem);
             this.groupBoxButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxButton.Location = new System.Drawing.Point(809, 0);
+            this.groupBoxButton.Location = new System.Drawing.Point(814, 0);
             this.groupBoxButton.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxButton.Name = "groupBoxButton";
             this.groupBoxButton.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxButton.Size = new System.Drawing.Size(514, 450);
+            this.groupBoxButton.Size = new System.Drawing.Size(509, 509);
             this.groupBoxButton.TabIndex = 2;
             this.groupBoxButton.TabStop = false;
             // 
@@ -202,11 +211,69 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
+            // dgvDoDung
+            // 
+            this.dgvDoDung.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvDoDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDoDung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dgvDoDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDoDung.Location = new System.Drawing.Point(4, 19);
+            this.dgvDoDung.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDoDung.Name = "dgvDoDung";
+            this.dgvDoDung.RowHeadersWidth = 51;
+            this.dgvDoDung.Size = new System.Drawing.Size(501, 486);
+            this.dgvDoDung.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "MaDD";
+            this.Column1.HeaderText = "Mã Đồ Dùng";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "TenDD";
+            this.Column2.HeaderText = "Tên Đồ Dùng";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "SoLuong";
+            this.Column3.HeaderText = "Số Lượng";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "DonViTinh";
+            this.Column4.HeaderText = "Đơn Vị Tính";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.DataPropertyName = "GiaMua";
+            this.Column5.HeaderText = "Giá Nhập";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
             // frmDoDungCuaKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1323, 450);
+            this.ClientSize = new System.Drawing.Size(1323, 509);
             this.Controls.Add(this.groupBoxButton);
             this.Controls.Add(this.groupBoxText);
             this.Name = "frmDoDungCuaKhachSan";
@@ -214,6 +281,7 @@
             this.groupBoxText.ResumeLayout(false);
             this.groupBoxText.PerformLayout();
             this.groupBoxButton.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoDung)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -235,5 +303,11 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.DataGridView dgvDoDung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
