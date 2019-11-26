@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QuanLyKhachSan
 {
-    class frmChoThuePhong
+    public partial class frmChoThuePhong : Form
     {
+        public frmChoThuePhong()
+        {
+            InitializeComponent();
+        }
     }
 }
