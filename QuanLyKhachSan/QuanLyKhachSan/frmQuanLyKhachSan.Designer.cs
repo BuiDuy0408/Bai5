@@ -148,7 +148,7 @@
             this.Controls.Add(this.pictureBoxBackground);
             this.Controls.Add(this.menuStrip1);
             this.Name = "frmQuanLyKhachSan";
-            this.Text = "frmQuanLyKhachSan";
+            this.Text = "Quản Lý Khách Sạn";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackground)).EndInit();
