@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BangKhachSan;
+using KetNoiDB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,16 @@ namespace QuanLyKhachSan
         public KhachThue()
         {
             InitializeComponent();
+        }
+        BUS_KhachThuePhong khach = new BUS_KhachThuePhong();
+        int chon = 0;
+        TimKiem tk = new TimKiem();
+
+        public void Khoa()
+        {
+            txtHoTen.Enabled = txtCMND.Enabled = cbGT.Enabled = dtpNgay.Enabled = false;
+            btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = true;
+            btnLuu.Enabled = false;
         }
     }
 }
