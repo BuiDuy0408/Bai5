@@ -71,6 +71,9 @@
     <Compile Include="TraPhong.Designer.cs">
       <DependentUpon>TraPhong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmChoThuePhong.resx">
+      <DependentUpon>frmChoThuePhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
