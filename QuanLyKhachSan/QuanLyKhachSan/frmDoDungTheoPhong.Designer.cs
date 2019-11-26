@@ -59,7 +59,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.txtTinhTrang);
             this.groupBox1.Controls.Add(this.txtDonVi);
