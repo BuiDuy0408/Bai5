@@ -36,12 +36,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnDodung = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Khaki;
+            this.groupBox5.Controls.Add(this.groupBox4);
             this.groupBox5.Controls.Add(this.btnDodung);
             this.groupBox5.Controls.Add(this.textBox1);
             this.groupBox5.Controls.Add(this.label5);
@@ -54,7 +59,7 @@
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(867, 419);
+            this.groupBox5.Size = new System.Drawing.Size(1126, 419);
             this.groupBox5.TabIndex = 56;
             this.groupBox5.TabStop = false;
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
@@ -124,15 +129,50 @@
             this.btnDodung.Text = "Đồ dùng trong phòng";
             this.btnDodung.UseVisualStyleBackColor = true;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Khaki;
+            this.groupBox4.Controls.Add(this.btnLuu);
+            this.groupBox4.Controls.Add(this.btnThem);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox4.Location = new System.Drawing.Point(598, 19);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(524, 396);
+            this.groupBox4.TabIndex = 62;
+            this.groupBox4.TabStop = false;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(251, 5);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(100, 43);
+            this.btnLuu.TabIndex = 56;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(116, 5);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(100, 43);
+            this.btnThem.TabIndex = 53;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 419);
+            this.ClientSize = new System.Drawing.Size(1126, 419);
             this.Controls.Add(this.groupBox5);
             this.Name = "Form1";
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -147,5 +187,8 @@
         private System.Windows.Forms.Button btnDodung;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnThem;
     }
 }
