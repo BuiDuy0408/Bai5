@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BangKhachSan;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,27 @@ namespace QuanLyKhachSan
         public frmChoThuePhong()
         {
             InitializeComponent();
+        }
+        public void HienThiListKhach()
+        {
+            dgvKhachThuePhong.DataSource = kh.HienThiKhach_2TC();
+        }
+        public void HienThiPhongTrong_DV()
+        {
+            dgvPhongTrong.DataSource = phong.HienThiPhongTrong();
+            dgvDichVu.DataSource = dv.HienThiDV();
+        }
+        private void btnThemKhachMoi_Click(object sender, EventArgs e)
+        {
+            KhachThue frm = new KhachThue();
+            frm.Show();
+
+        }
+
+        private void frmChoThuePhong_Load(object sender, EventArgs e)
+        {
+            HienThiListKhach();
+            HienThiPhongTrong_DV();
         }
     }
 }
