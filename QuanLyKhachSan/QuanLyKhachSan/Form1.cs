@@ -26,5 +26,10 @@ namespace QuanLyKhachSan
         {
 
         }
+
+        private void btnThemKhachMoi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
