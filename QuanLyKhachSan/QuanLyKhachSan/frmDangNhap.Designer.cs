@@ -36,16 +36,15 @@
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnDangNhap = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Location = new System.Drawing.Point(128, 22);
+            this.label1.Location = new System.Drawing.Point(173, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(505, 35);
@@ -55,28 +54,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(112, 180);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(216, 197);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 29);
+            this.label2.Size = new System.Drawing.Size(67, 25);
             this.label2.TabIndex = 19;
             this.label2.Text = "Pass :";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(45, 128);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(167, 122);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(141, 29);
+            this.label13.Size = new System.Drawing.Size(116, 25);
             this.label13.TabIndex = 18;
             this.label13.Text = "UserName :";
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(200, 185);
+            this.txtPass.Location = new System.Drawing.Point(334, 197);
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
@@ -85,7 +84,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(200, 133);
+            this.txtUserName.Location = new System.Drawing.Point(334, 122);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(199, 22);
@@ -93,42 +92,33 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(200, 306);
+            this.btnThoat.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnThoat.Location = new System.Drawing.Point(715, 346);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(171, 54);
+            this.btnThoat.Size = new System.Drawing.Size(109, 48);
             this.btnThoat.TabIndex = 23;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.Location = new System.Drawing.Point(200, 229);
+            this.btnDangNhap.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnDangNhap.Location = new System.Drawing.Point(334, 255);
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(171, 53);
             this.btnDangNhap.TabIndex = 22;
             this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(412, 71);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(409, 321);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            this.btnDangNhap.UseVisualStyleBackColor = false;
             // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(837, 407);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.txtPass);
@@ -139,7 +129,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDangNhap";
             this.Text = "Đăng Nhập";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,7 +143,6 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
