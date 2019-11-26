@@ -47,5 +47,10 @@ namespace QuanLyKhachSan
         {
 
         }
+
+        private void GroupBoxText_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
