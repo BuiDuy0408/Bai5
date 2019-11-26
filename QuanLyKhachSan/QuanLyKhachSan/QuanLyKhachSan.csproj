@@ -75,11 +75,11 @@
     <Compile Include="frmDoDungTheoPhong.Designer.cs">
       <DependentUpon>frmDoDungTheoPhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhachThue.cs">
+    <Compile Include="frmKhachThue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KhachThue.Designer.cs">
-      <DependentUpon>KhachThue.cs</DependentUpon>
+    <Compile Include="frmKhachThue.Designer.cs">
+      <DependentUpon>frmKhachThue.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,8 +104,8 @@
     <EmbeddedResource Include="frmDoDungTheoPhong.resx">
       <DependentUpon>frmDoDungTheoPhong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhachThue.resx">
-      <DependentUpon>KhachThue.cs</DependentUpon>
+    <EmbeddedResource Include="frmKhachThue.resx">
+      <DependentUpon>frmKhachThue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
