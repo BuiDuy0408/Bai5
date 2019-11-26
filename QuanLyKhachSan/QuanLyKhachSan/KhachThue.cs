@@ -28,5 +28,17 @@ namespace QuanLyKhachSan
             btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = true;
             btnLuu.Enabled = false;
         }
+        public void Mo()
+        {
+            txtHoTen.Enabled = txtCMND.Enabled = cbGT.Enabled = dtpNgay.Enabled = true;
+            btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
+        }
+
+        public void SetNull()
+        {
+            txtMa.Text = txtHoTen.Text = txtCMND.Text = cbGT.Text = txtTK.Text = cbTK.Text = "";
+            dtpNgay.Text = DateTime.Now.ToString();
+        }
     }
 }
