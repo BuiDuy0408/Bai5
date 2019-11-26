@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan
 {
-    public partial class Form1 : Form
+    public partial class frmDoDungTheoPhong : Form
     {
-        public Form1()
+        public frmDoDungTheoPhong()
         {
             InitializeComponent();
-        }
-
-        private void groupBox5_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }
