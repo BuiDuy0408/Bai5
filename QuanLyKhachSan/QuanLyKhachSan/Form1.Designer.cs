@@ -28,11 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtTenphong = new System.Windows.Forms.TextBox();
+            this.txtMaphong = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox5.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.Khaki;
+            this.groupBox5.Controls.Add(this.txtTenphong);
+            this.groupBox5.Controls.Add(this.txtMaphong);
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.label4);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox5.Location = new System.Drawing.Point(0, 0);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Size = new System.Drawing.Size(867, 419);
+            this.groupBox5.TabIndex = 56;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
+            // 
+            // txtTenphong
+            // 
+            this.txtTenphong.Location = new System.Drawing.Point(316, 53);
+            this.txtTenphong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenphong.Name = "txtTenphong";
+            this.txtTenphong.Size = new System.Drawing.Size(180, 22);
+            this.txtTenphong.TabIndex = 58;
+            // 
+            // txtMaphong
+            // 
+            this.txtMaphong.Enabled = false;
+            this.txtMaphong.Location = new System.Drawing.Point(316, 12);
+            this.txtMaphong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaphong.Name = "txtMaphong";
+            this.txtMaphong.Size = new System.Drawing.Size(180, 22);
+            this.txtMaphong.TabIndex = 57;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(168, 53);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 17);
+            this.label6.TabIndex = 56;
+            this.label6.Text = "Tên phòng";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(169, 12);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 17);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "Mã phòng";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(867, 419);
+            this.Controls.Add(this.groupBox5);
+            this.Name = "Form1";
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox txtTenphong;
+        private System.Windows.Forms.TextBox txtMaphong;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
     }
 }
