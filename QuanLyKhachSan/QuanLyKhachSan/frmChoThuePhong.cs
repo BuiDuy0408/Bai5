@@ -78,5 +78,49 @@ namespace QuanLyKhachSan
 
             }
         }
+        private void btnChonPhong_Click(object sender, EventArgs e)
+        {
+            //try
+            //{
+            DataTable dt = new DataTable();
+            dt = ThuePhong.ThemHoaDon(txtMaKH.Text, "Admin", DateTime.Now);
+            if (dt.Rows.Count < 1)
+                MessageBox.Show("Thêm Hóa Đơn Thất Bại.");
+            else
+                MessageBox.Show("Thêm Hóa Đơn Thành Công.");
+            MaHD = dt.Rows[0]["MaHD"].ToString();
+            DataTable dt2 = new DataTable();
+            //try
+            //{
+            dt2 = ThuePhong.ThemCTHoaDon(MaHD, txtMaPhong.Text, "DV00000001");
+            //}
+            //catch {
+            //MessageBox.Show("Thêm Chi Tiết Hóa Đơn Thất Bại.");}
+            //if (dt2.Rows.Count < 1)
+            //    MessageBox.Show("Thêm Chi Tiết Hóa Đơn Thất Bại.");
+            //else
+            //    MessageBox.Show("Thêm Chi Tiết Hóa Đơn Thành Công.");
+            ThuePhong.UpdateTrangThaiPhong_Thue(txtMaPhong.Text);
+
+            //}
+            //catch { }
+            HienThiPhongTrong_DV();
+        }
+
+        private void btnThemDV_Click(object sender, EventArgs e)
+        {
+            ThuePhong.ThemDV(MaHD, txtMaPhong.Text, txtMaDV.Text);
+            HienThiPhongTrong_DV();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HienThiListKhach();
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
