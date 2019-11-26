@@ -60,6 +60,7 @@
             this.groupBoxText.Controls.Add(this.label2);
             this.groupBoxText.Controls.Add(this.label1);
             this.groupBoxText.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBoxText.ForeColor = System.Drawing.Color.Red;
             this.groupBoxText.Location = new System.Drawing.Point(0, 0);
             this.groupBoxText.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxText.Name = "groupBoxText";
@@ -113,6 +114,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(429, 153);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -123,6 +125,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(415, 97);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -133,6 +136,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(431, 41);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
