@@ -92,7 +92,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnThoat.BackColor = System.Drawing.Color.Aqua;
             this.btnThoat.Location = new System.Drawing.Point(715, 346);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
