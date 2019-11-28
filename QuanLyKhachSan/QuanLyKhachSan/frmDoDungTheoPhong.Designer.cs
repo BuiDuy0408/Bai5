@@ -267,7 +267,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDoDungTheoPhong";
             this.Text = "Đồ dùng trong phòng";
-            this.Load += new System.EventHandler(this.frmDoDungTheoPhong_Load);
+            //this.Load += new System.EventHandler(this.frmDoDungTheoPhong_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
